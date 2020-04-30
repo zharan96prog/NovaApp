@@ -13,4 +13,5 @@ namespace WCF_Lib
         [OperationContract]
         string GetData(int value);
     }
+    //egwg
 }
