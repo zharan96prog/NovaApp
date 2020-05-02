@@ -8,7 +8,7 @@ using System.Text;
 namespace WCF_Lib
 {
     [ServiceContract]
-    public interface IService1
+    public interface INovaPoshta
     {
         [OperationContract]
         string GetData(int value);
