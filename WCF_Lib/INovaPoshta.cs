@@ -11,6 +11,6 @@ namespace WCF_Lib
     public interface INovaPoshta
     {
         [OperationContract]
-        string GetData(int value);
+        void CreatePackage(Package package); 
     }
  }

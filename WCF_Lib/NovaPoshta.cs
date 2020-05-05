@@ -10,9 +10,11 @@ namespace WCF_Lib
     public class NovaPoshta : INovaPoshta
     {
         NovaContext context = new NovaContext();
-        public string GetData(int value)
+
+        public void CreatePackage(Package package)
         {
-            return string.Format("You entered: {0}", value);
+            context.Package.Add(package);
+            context.SaveChanges(); 
         }
     }
 }

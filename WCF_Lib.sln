@@ -5,6 +5,11 @@ VisualStudioVersion = 15.0.28307.1022
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCF_Lib", "WCF_Lib\WCF_Lib.csproj", "{5DF4DA33-A181-486C-81D8-66A66E8D7983}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfClientNovaPoshta", "WpfClientNovaPoshta\WpfClientNovaPoshta.csproj", "{285499B4-ABFA-4486-898B-46ECC0244460}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5DF4DA33-A181-486C-81D8-66A66E8D7983} = {5DF4DA33-A181-486C-81D8-66A66E8D7983}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +20,10 @@ Global
 		{5DF4DA33-A181-486C-81D8-66A66E8D7983}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DF4DA33-A181-486C-81D8-66A66E8D7983}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DF4DA33-A181-486C-81D8-66A66E8D7983}.Release|Any CPU.Build.0 = Release|Any CPU
+		{285499B4-ABFA-4486-898B-46ECC0244460}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{285499B4-ABFA-4486-898B-46ECC0244460}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{285499B4-ABFA-4486-898B-46ECC0244460}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{285499B4-ABFA-4486-898B-46ECC0244460}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
