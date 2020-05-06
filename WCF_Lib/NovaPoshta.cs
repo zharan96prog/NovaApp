@@ -14,6 +14,7 @@ namespace WCF_Lib
         public void CreatePackage(Package package)
         {
             context.Package.Add(package);
+            context.Entry(package).State = System.Data.Entity.EntityState.Added;
             context.SaveChanges(); 
         }
     }
