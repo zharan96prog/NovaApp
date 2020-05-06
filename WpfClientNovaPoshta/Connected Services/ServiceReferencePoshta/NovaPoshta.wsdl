@@ -10,13 +10,9 @@
   <wsdl:message name="INovaPoshta_CreatePackage_InputMessage">
     <wsdl:part name="parameters" element="tns:CreatePackage" />
   </wsdl:message>
-  <wsdl:message name="INovaPoshta_CreatePackage_OutputMessage">
-    <wsdl:part name="parameters" element="tns:CreatePackageResponse" />
-  </wsdl:message>
   <wsdl:portType name="INovaPoshta">
     <wsdl:operation name="CreatePackage">
       <wsdl:input wsaw:Action="http://tempuri.org/INovaPoshta/CreatePackage" message="tns:INovaPoshta_CreatePackage_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/INovaPoshta/CreatePackageResponse" message="tns:INovaPoshta_CreatePackage_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_INovaPoshta" type="tns:INovaPoshta">
@@ -26,9 +22,6 @@
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
     </wsdl:operation>
   </wsdl:binding>
   <wsdl:service name="NovaPoshta">

@@ -10,7 +10,7 @@ namespace WCF_Lib
     [ServiceContract]
     public interface INovaPoshta
     {
-        [OperationContract]
+        [OperationContract(IsOneWay =true)]
         void CreatePackage(Package package); 
     }
  }

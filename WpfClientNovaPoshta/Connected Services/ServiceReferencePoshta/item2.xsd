@@ -8,9 +8,4 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="CreatePackageResponse">
-    <xs:complexType>
-      <xs:sequence />
-    </xs:complexType>
-  </xs:element>
 </xs:schema>

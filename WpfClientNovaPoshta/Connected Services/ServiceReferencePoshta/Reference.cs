@@ -315,10 +315,10 @@ namespace WpfClientNovaPoshta.ServiceReferencePoshta {
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReferencePoshta.INovaPoshta")]
     public interface INovaPoshta {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/INovaPoshta/CreatePackage", ReplyAction="http://tempuri.org/INovaPoshta/CreatePackageResponse")]
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/INovaPoshta/CreatePackage")]
         void CreatePackage(WpfClientNovaPoshta.ServiceReferencePoshta.Package package);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/INovaPoshta/CreatePackage", ReplyAction="http://tempuri.org/INovaPoshta/CreatePackageResponse")]
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/INovaPoshta/CreatePackage")]
         System.Threading.Tasks.Task CreatePackageAsync(WpfClientNovaPoshta.ServiceReferencePoshta.Package package);
     }
     
