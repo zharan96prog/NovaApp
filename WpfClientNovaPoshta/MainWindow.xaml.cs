@@ -25,8 +25,11 @@ namespace WpfClientNovaPoshta
         }
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
-            await proxy.CreatePackageAsync(new Package {Number="123123", City="Rivne", Department="3", Description="PC",
-                NameDest ="Sanya", Payer=1, Remittance=100, ID_User=1});
+            CreatePackage createPackage = new CreatePackage();
+            createPackage.Show();
+
+            //await proxy.CreatePackageAsync(new Package {Number="2222", City="Rivne", Department="3", Description="PC",
+            //    NameDest ="SanyaD", Payer=0, Remittance=1010, ID_User=1});
         }
     }
 }

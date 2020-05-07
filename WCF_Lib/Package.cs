@@ -38,5 +38,11 @@ namespace WCF_Lib
         public int? ID_User { get; set; }
 
         public virtual User User { get; set; }
+
+        public Package()
+        {
+            Random rnd = new Random();
+            Number = "204502" + rnd.Next(99999999).ToString();
+        }
     }
 }
