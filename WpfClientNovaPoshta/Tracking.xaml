@@ -10,7 +10,7 @@
         <Image Source ="image/4.png"  HorizontalAlignment="Left" Height="151" VerticalAlignment="Top" Width="263"/>
         <TextBlock Background="White"  Foreground="Red" FontSize="15" FontWeight="Bold" HorizontalAlignment="Left" Margin="10,158,0,0" TextAlignment="Center" TextWrapping="Wrap" Text="Введіть номер накладної" VerticalAlignment="Top" Width="243" Height="21"/>
         <TextBox BorderBrush="Red" BorderThickness="1" HorizontalAlignment="Left" Height="22" Margin="10,188,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="243"/>
-        <Button Background="White" BorderBrush="Red" BorderThickness="1" Foreground="Red" FontSize="13" FontWeight="Bold" Content="Відслідкувати" HorizontalAlignment="Left" Margin="71,215,0,0" VerticalAlignment="Top" Width="121" Height="28"/>
+        <Button Background="White" BorderBrush="Red" BorderThickness="1" Foreground="Red" FontSize="13" FontWeight="Bold" Content="Відслідкувати" HorizontalAlignment="Left" Margin="71,215,0,0" VerticalAlignment="Top" Width="121" Height="28" Click="Button_Click"/>
 
     </Grid>
 </Window>

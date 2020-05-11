@@ -31,7 +31,8 @@ namespace WpfClientNovaPoshta
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-
+            Tracking trackingWindow = new Tracking();
+            trackingWindow.Show();
         }
     }
 }
