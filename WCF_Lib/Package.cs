@@ -42,7 +42,7 @@ namespace WCF_Lib
         public Package()
         {
             Random rnd = new Random();
-            Number = "204502" + rnd.Next(99999999).ToString();
+            Number = "204502" + rnd.Next(int.MaxValue).ToString();
         }
     }
 }

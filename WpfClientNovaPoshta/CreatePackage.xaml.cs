@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WCF_Lib;
 using WpfClientNovaPoshta.ServiceReferencePoshta;
 
 namespace WpfClientNovaPoshta
@@ -52,6 +53,8 @@ namespace WpfClientNovaPoshta
                 };
                 await proxy.CreatePackageAsync(package);
             }
+            this.Close();
+
         }
     }
 }

@@ -1,12 +1,11 @@
 ﻿<Window x:Class="WpfClientNovaPoshta.CreatePackage"
-        Icon="C:\Users\Serhii Pinkevych\Desktop\1.ico"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfClientNovaPoshta"
         mc:Ignorable="d"
-        Title="Create Package" Height="482" Width="400">
+        Title="Створення посилкi" Height="482" Width="400">
     <Grid Background="Red">
         <TextBox Name="txtFIO" BorderBrush="Red" BorderThickness="1" HorizontalAlignment="Left" Height="34" Margin="26,41,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="336"/>
         <Label BorderBrush="Red" BorderThickness="1" Background="White" Content="ПІБ Одержувача" HorizontalAlignment="Left" Margin="26,8,0,0" VerticalAlignment="Top" Height="28" Width="123"/>

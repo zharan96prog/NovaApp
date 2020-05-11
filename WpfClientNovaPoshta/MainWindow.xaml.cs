@@ -22,6 +22,7 @@ namespace WpfClientNovaPoshta
         public MainWindow()
         {
             InitializeComponent();
+          //  image.Source = "1.png";
         }
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
