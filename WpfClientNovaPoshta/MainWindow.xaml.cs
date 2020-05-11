@@ -22,15 +22,16 @@ namespace WpfClientNovaPoshta
         public MainWindow()
         {
             InitializeComponent();
-          //  image.Source = "1.png";
         }
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
             CreatePackage createPackage = new CreatePackage();
             createPackage.Show();
+        }
 
-            //await proxy.CreatePackageAsync(new Package {Number="2222", City="Rivne", Department="3", Description="PC",
-            //    NameDest ="SanyaD", Payer=0, Remittance=1010, ID_User=1});
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
