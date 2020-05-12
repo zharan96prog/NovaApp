@@ -21,7 +21,7 @@
         <Label BorderBrush="Red" BorderThickness="1" Background="White" Content="Оплачує: " HorizontalAlignment="Left" Margin="10,218,0,0" VerticalAlignment="Top" Height="28" Width="123"/>
         <RadioButton Name="rb1" Content="Отримувач" HorizontalAlignment="Left" Margin="280,225,0,0" VerticalAlignment="Top"/>
         <RadioButton  Name="rb2" Content="Відправник" HorizontalAlignment="Left" Margin="156,225,0,0" VerticalAlignment="Top" Height="21" Width="98"/>
-        <Image Source="image/3.png" HorizontalAlignment="Left" Height="43" Margin="43,5,0,0" VerticalAlignment="Top" Width="310"/>
+        <Image Source="image/3.jpg" HorizontalAlignment="Left" Height="43" Margin="43,5,0,0" VerticalAlignment="Top" Width="310"/>
 
     </Grid>
 </Window>
