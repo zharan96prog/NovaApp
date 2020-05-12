@@ -25,8 +25,14 @@ namespace WpfClientNovaPoshta
         }
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
-            await proxy.CreatePackageAsync(new Package {Number="123123", City="Rivne", Department="3", Description="PC",
-                NameDest ="Sanya", Payer=1, Remittance=100, ID_User=1});
+            CreatePackage createPackage = new CreatePackage();
+            createPackage.Show();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Tracking trackingWindow = new Tracking();
+            trackingWindow.Show();
         }
     }
 }

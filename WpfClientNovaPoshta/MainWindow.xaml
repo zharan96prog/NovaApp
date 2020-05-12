@@ -5,9 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfClientNovaPoshta"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Нова пошта" Height="422" Width="450" ResizeMode="NoResize">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="206,97,0,0" VerticalAlignment="Top" Width="367" Click="Button_Click" Height="164"/>
-
+        <Button Background="White" BorderBrush="Red" BorderThickness="1" Foreground="Red" FontSize="16" FontWeight="Bold"  Content="Створити посилку" HorizontalAlignment="Left" Margin="10,197,0,0" VerticalAlignment="Top" Width="200" Click="Button_Click" Height="80"/>
+        <Button Background="White" BorderBrush="Red" BorderThickness="1" Foreground="Red" FontSize="16" FontWeight="Bold"  Content="Відслідкувати посилку" HorizontalAlignment="Left" Margin="232,197,0,0" VerticalAlignment="Top" Width="200"  Height="80" Click="Button_Click_1"/>
+        <Button Background="White" BorderBrush="Red" BorderThickness="1" Foreground="Red" FontSize="16" FontWeight="Bold" Content="Розрахувати ціну" HorizontalAlignment="Left" Margin="10,297,0,0" VerticalAlignment="Top" Width="200" Height="80"/>
+        <Button Background="White" BorderBrush="Red" BorderThickness="1" Foreground="Red" FontSize="16" FontWeight="Bold" Content="Дата доставки" HorizontalAlignment="Left" Margin="232,297,0,0" VerticalAlignment="Top" Width="200"  Height="80"/>
+        <Image Name="image" Source="image/2.jpg" HorizontalAlignment="Left" Height="175" Margin="66,10,0,0" VerticalAlignment="Top" Width="315"/>
     </Grid>
 </Window> 

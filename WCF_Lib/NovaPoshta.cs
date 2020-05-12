@@ -10,7 +10,6 @@ namespace WCF_Lib
     public class NovaPoshta : INovaPoshta
     {
         NovaContext context = new NovaContext();
-
         public void CreatePackage(Package package)
         {
             context.Package.Add(package);
