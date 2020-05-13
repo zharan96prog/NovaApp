@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace WpfClientNovaPoshta.Model
 {
 
-    public class Rootobject
+    public class RootObject
     {
         public bool success { get; set; }
         public Datum[] data { get; set; }

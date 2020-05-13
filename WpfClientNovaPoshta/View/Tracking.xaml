@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfClientNovaPoshta"
         mc:Ignorable="d"
-        Title="Відслідковування" Height="387.322" Width="271">
+        Title="Відслідковування" Height="404.322" Width="271">
     <Grid>
         <Image Source="image/4.jpg"  HorizontalAlignment="Left" Height="151" VerticalAlignment="Top" Width="263"/>
         <TextBlock Background="White"  Foreground="Red" FontSize="15" FontWeight="Bold" HorizontalAlignment="Left" Margin="10,158,0,0" TextAlignment="Center" TextWrapping="Wrap" Text="Введіть номер накладної" VerticalAlignment="Top" Width="243" Height="21"/>
@@ -15,6 +15,10 @@
         <TextBox Name="txt2" BorderBrush="Red" BorderThickness="1" HorizontalAlignment="Left" Height="22" Margin="10,239,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="243"/>
         <Label x:Name="lbl1" Content="Відправник" HorizontalAlignment="Left" Margin="10,293,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lbl2" Content="Отримувач" HorizontalAlignment="Left" Margin="183,293,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.512,0.487"/>
-        <ProgressBar HorizontalAlignment="Left" Height="17" Margin="10,319,0,0" VerticalAlignment="Top" Width="244"/>
+        <ProgressBar Maximum="100" Minimum="0" Name="bar1" HorizontalAlignment="Left" Height="20" Margin="10,319,0,0" VerticalAlignment="Top" Width="60"/>
+        <ProgressBar Maximum="100" Minimum="0" Name="bar2" HorizontalAlignment="Left" Height="20" Margin="76,319,0,0" VerticalAlignment="Top" Width="56"/>
+        <ProgressBar Maximum="100" Minimum="0" Name="bar3" HorizontalAlignment="Left" Height="20" Margin="137,319,0,0" VerticalAlignment="Top" Width="56"/>
+        <ProgressBar Maximum="100" Minimum="0" Name="bar4" HorizontalAlignment="Left" Height="20" Margin="198,319,0,0" VerticalAlignment="Top" Width="56"/>
+        <Label Name="lbl3" Content="" Foreground="Red" FontSize="15"  HorizontalAlignment="Left" Margin="11,339,0,0" VerticalAlignment="Top" Width="243" Height="29"/>
     </Grid>
 </Window>
