@@ -18,7 +18,6 @@ namespace WpfClientNovaPoshta
 {
     public partial class MainWindow : Window
     {
-        public NovaPoshtaClient proxy = new NovaPoshtaClient();
         public MainWindow()
         {
             InitializeComponent();
@@ -33,6 +32,18 @@ namespace WpfClientNovaPoshta
         {
             Tracking trackingWindow = new Tracking();
             trackingWindow.Show();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            DateOfDelivery delivery = new DateOfDelivery();
+            delivery.Show();
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            CostInfo cost = new CostInfo();
+            cost.Show();
         }
     }
 }

@@ -14,7 +14,7 @@
         <TextBlock Background="White"  Foreground="Red" FontSize="15" FontWeight="Bold" HorizontalAlignment="Left" Margin="10,213,0,0" TextAlignment="Center" TextWrapping="Wrap" Text="Введіть номер телефону" VerticalAlignment="Top" Width="243" Height="21"/>
         <TextBox Name="txt2" BorderBrush="Red" BorderThickness="1" HorizontalAlignment="Left" Height="22" Margin="10,239,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="243"/>
         <Label x:Name="lbl1" Content="Відправник" HorizontalAlignment="Left" Margin="10,293,0,0" VerticalAlignment="Top"/>
-        <Label Content="Отримувач" HorizontalAlignment="Left" Margin="183,293,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.512,0.487"/>
+        <Label x:Name="lbl2" Content="Отримувач" HorizontalAlignment="Left" Margin="183,293,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.512,0.487"/>
         <ProgressBar HorizontalAlignment="Left" Height="17" Margin="10,319,0,0" VerticalAlignment="Top" Width="244"/>
     </Grid>
 </Window>
