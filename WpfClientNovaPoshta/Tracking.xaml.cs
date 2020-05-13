@@ -29,14 +29,8 @@ namespace WpfClientNovaPoshta
             InitializeComponent();
         }
 
-        private async void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            await GetAllDatum();
-        }
-
-        private async Task<List<Datum>> GetAllDatum()
-        {
-            List<Datum> list = new List<Datum>();
             HttpWebRequest client = (HttpWebRequest)WebRequest.Create("http://api.novaposhta.ua/v2.0/json/");
             {
                 client.Method = "POST";
@@ -52,10 +46,8 @@ namespace WpfClientNovaPoshta
                 var text = stream.ReadToEnd();
                 lbl.Content = text;
 
-              //  string json = await response.Content.ReadAsStringAsync();
-              //  list = JsonConvert.DeserializeObject<List<Datum>>(json);
             }
-            return list;
         }
+
     }
 }
