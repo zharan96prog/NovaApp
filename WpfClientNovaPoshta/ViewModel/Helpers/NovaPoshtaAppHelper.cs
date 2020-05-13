@@ -11,7 +11,7 @@ using WpfClientNovaPoshta.Model;
 
 namespace WpfClientNovaPoshta.ViewModel.Helpers
 {
-    class NovaPoshtaAppHelper
+    public class NovaPoshtaAppHelper
     {
         public static async Task<List<RootobjectCity>> GetCities(string query)
         {

@@ -13,6 +13,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WpfClientNovaPoshta.Model;
+using WpfClientNovaPoshta.ViewModel.Helpers;
 
 namespace WpfClientNovaPoshta
 {
@@ -25,6 +27,7 @@ namespace WpfClientNovaPoshta
         {
             InitializeComponent();
         }
+
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -44,6 +47,22 @@ namespace WpfClientNovaPoshta
                 var text = stream.ReadToEnd();
                
             }
+        }
+
+        private async void citySend_LostFocus(object sender, RoutedEventArgs e)
+        {
+            List<RootobjectCity> list = new List<RootobjectCity>();
+            list.AddRange(await NovaPoshtaAppHelper.GetCities(citySend.Text));
+
+            //list.ItemsSource = await NovaPoshtaAppHelper.GetCities(citySend.Text);
+
+            foreach (var item in list)
+            {
+                cmbCitySender.Items.Add(item.data[0].Addresses);
+            }
+            //    cmbCitySender.ItemsSource = list.First().data[0].Addresses[0].DeliveryCity;
+            string text = "classs";
+            string text2 = "class1s";
         }
     }
 }

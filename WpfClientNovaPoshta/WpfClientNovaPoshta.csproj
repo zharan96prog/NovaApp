@@ -65,31 +65,31 @@
     </ApplicationDefinition>
     <Compile Include="Model\City.cs" />
     <Compile Include="ViewModel\Helpers\NovaPoshtaAppHelper.cs" />
-    <Compile Include="View\CostInfo.xaml.cs">
+    <Compile Include="CostInfo.xaml.cs">
       <DependentUpon>CostInfo.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\DateOfDelivery.xaml.cs">
+    <Compile Include="DateOfDelivery.xaml.cs">
       <DependentUpon>DateOfDelivery.xaml</DependentUpon>
     </Compile>
     <Compile Include="Model\Tracking.cs" />
     <Compile Include="Model\CostInfo.cs" />
     <Compile Include="Model\DateOfDelivery.cs" />
-    <Compile Include="View\Tracking.xaml.cs">
+    <Compile Include="Tracking.xaml.cs">
       <DependentUpon>Tracking.xaml</DependentUpon>
     </Compile>
-    <Page Include="View\CostInfo.xaml">
+    <Page Include="CostInfo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\CreatePackage.xaml">
+    <Page Include="CreatePackage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\DateOfDelivery.xaml">
+    <Page Include="DateOfDelivery.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\MainWindow.xaml">
+    <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -102,14 +102,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="View\CreatePackage.xaml.cs">
+    <Compile Include="CreatePackage.xaml.cs">
       <DependentUpon>CreatePackage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\MainWindow.xaml.cs">
+    <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="View\Tracking.xaml">
+    <Page Include="Tracking.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -187,6 +187,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="image\4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="View\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
