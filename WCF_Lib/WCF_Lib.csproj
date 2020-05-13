@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="INovaPoshta.cs" />
+    <Compile Include="Model\Datum.cs" />
     <Compile Include="NovaContext.cs" />
     <Compile Include="Package.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

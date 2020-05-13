@@ -37,16 +37,15 @@ namespace WpfClientNovaPoshta
                 client.ContentType = "application/json";
 
                 var streamOut = new StreamWriter(client.GetRequestStream());
-                //string api = "fa65506491a98ed202663e43d0144f3b";
-                string json = "{\"apiKey\":\"fa65506491a98ed202663e43d0144f3b\",\"modelName\":\"TrackingDocument\",\"calledMethod\":\"getStatusDocuments\",\"methodProperties\":{\"Documents\":[{\"DocumentNumber\":\"20450234771943\",\"Phone\":\"0954165091\"}]}}";
+                string api = "fa65506491a98ed202663e43d0144f3b";
+                string json = String.Format("{\"apiKey\":\"{0}\",\"modelName\":\"TrackingDocument\",\"calledMethod\":\"getStatusDocuments\",\"methodProperties\":{\"Documents\":[{\"DocumentNumber\":\"20450234771943\",\"Phone\":\"0954165091\"}]}}", api);
                 streamOut.Write(json);
                 streamOut.Close();
                 var responce = client.GetResponse();
                 var stream = new StreamReader(responce.GetResponseStream());
                 var text = stream.ReadToEnd();
-                //lbl.Content = text;
-                Datum datum = JsonConvert.DeserializeObject<Datum>(text);
-                lbl1.Content = datum.RefCitySender;
+                lbl.Content = text;
+
             }
         }
 
