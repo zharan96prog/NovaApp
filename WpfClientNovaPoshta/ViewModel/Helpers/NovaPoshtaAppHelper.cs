@@ -13,7 +13,7 @@ namespace WpfClientNovaPoshta.ViewModel.Helpers
 {
     public class NovaPoshtaAppHelper
     {
-        public static async Task<List<RootobjectCity>> GetCities(string query)
+        public static async Task<List<DatumCity>> GetCities(string query)
         {
             List<RootobjectCity> cities = new List<RootobjectCity>();
             HttpWebRequest client = (HttpWebRequest)WebRequest.Create("http://api.novaposhta.ua/v2.0/json/");
@@ -27,9 +27,8 @@ namespace WpfClientNovaPoshta.ViewModel.Helpers
             var responce = await client.GetResponseAsync();
             var stream = new StreamReader(responce.GetResponseStream());
             var text = await stream.ReadToEndAsync();
-            cities = JsonConvert.DeserializeObject<List<RootobjectCity>>(text);
-
-            return cities;
+            var t1 = JsonConvert.DeserializeObject<RootobjectCity>(text);
+            return t1.data.ToList();
         }
     }
 }

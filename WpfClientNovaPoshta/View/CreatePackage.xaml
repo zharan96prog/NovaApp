@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfClientNovaPoshta"
         mc:Ignorable="d"
-        Title="Створення посилкi" Height="332" Width="400" ResizeMode="NoResize">
+        Title="Створення посилкi" Height="359" Width="400" ResizeMode="NoResize">
     <Grid Background="White">
         <TextBox Name="txtFIO" BorderBrush="Red" BorderThickness="1" HorizontalAlignment="Left" Height="28" Margin="138,53,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="244"/>
         <Label BorderBrush="Red" BorderThickness="1" Background="White" Content="ПІБ Одержувача" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top" Height="28" Width="123"/>
@@ -17,11 +17,12 @@
         <TextBox Name="descrip" BorderBrush="Red" BorderThickness="1" HorizontalAlignment="Left" Height="28" Margin="138,152,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="244"/>
         <Label BorderBrush="Red" BorderThickness="1" Background="White" Content="Грошовий переказ: " HorizontalAlignment="Left" Margin="10,185,0,0" VerticalAlignment="Top" Height="28" Width="123"/>
         <TextBox Name="nalogka" BorderBrush="Red" BorderThickness="1" HorizontalAlignment="Left" Height="28" Margin="138,185,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="244"/>
-        <Button Background="White"  BorderBrush="Red" BorderThickness="1" Foreground="Red" FontSize="16" FontWeight="Bold" Content="Створити" HorizontalAlignment="Left" Margin="105,257,0,0" VerticalAlignment="Top" Width="169" Height="34" Click="Button_Click"/>
-        <Label BorderBrush="Red" BorderThickness="1" Background="White" Content="Оплачує: " HorizontalAlignment="Left" Margin="10,218,0,0" VerticalAlignment="Top" Height="28" Width="123"/>
-        <RadioButton Name="rb1" Content="Отримувач" HorizontalAlignment="Left" Margin="280,225,0,0" VerticalAlignment="Top"/>
-        <RadioButton  Name="rb2" Content="Відправник" HorizontalAlignment="Left" Margin="156,225,0,0" VerticalAlignment="Top" Height="21" Width="98"/>
+        <Button Background="White"  BorderBrush="Red" BorderThickness="1" Foreground="Red" FontSize="16" FontWeight="Bold" Content="Створити" HorizontalAlignment="Left" Margin="108,290,0,0" VerticalAlignment="Top" Width="169" Height="34" Click="Button_Click"/>
+        <Label BorderBrush="Red" BorderThickness="1" Background="White" Content="Оплачує: " HorizontalAlignment="Left" Margin="10,254,0,0" VerticalAlignment="Top" Height="28" Width="123"/>
+        <RadioButton Name="rb1" Content="Отримувач" HorizontalAlignment="Left" Margin="283,258,0,0" VerticalAlignment="Top"/>
+        <RadioButton  Name="rb2" Content="Відправник" HorizontalAlignment="Left" Margin="159,258,0,0" VerticalAlignment="Top" Height="21" Width="98"/>
         <Image Source="image/3.jpg" HorizontalAlignment="Left" Height="43" Margin="43,5,0,0" VerticalAlignment="Top" Width="310"/>
-
+        <Label BorderBrush="Red" BorderThickness="1" Background="White" Content="Номер відправника: " HorizontalAlignment="Left" Margin="10,218,0,0" VerticalAlignment="Top" Height="28" Width="123"/>
+        <TextBox x:Name="phone_sender" BorderBrush="Red" BorderThickness="1" HorizontalAlignment="Left" Height="28" Margin="138,218,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="244"/>
     </Grid>
 </Window>

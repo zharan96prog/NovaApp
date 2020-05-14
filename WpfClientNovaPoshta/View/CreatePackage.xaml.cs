@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using WCF_Lib;
+using WpfClientNovaPoshta.EntityForLogin;
 using WpfClientNovaPoshta.ServiceReferencePoshta;
 
 namespace WpfClientNovaPoshta
@@ -19,36 +20,41 @@ namespace WpfClientNovaPoshta
     public partial class CreatePackage : Window
     {
         public NovaPoshtaClient proxy = new NovaPoshtaClient();
+        ContextLogin context = new ContextLogin();
         public CreatePackage()
         {
             InitializeComponent();
         }
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
+            int ID_Sender = (from i in context.User
+                         where i.Phone.Equals(phone_sender.Text)
+                         select i.ID).First();
+
             if(rb1.IsChecked==true)
             {
-                Package package = new Package()
+                WCF_Lib.Package package = new WCF_Lib.Package()
                 {
                     NameDest = txtFIO.Text,
                     City = txtCity.Text,
                     Department = depart.Text,
                     Remittance = Convert.ToInt32(nalogka.Text),
                     Payer = 0,
-                    ID_User = 1,
+                    ID_User = ID_Sender,
                     Description = descrip.Text
                 };
                 await proxy.CreatePackageAsync(package);
             }
             if (rb2.IsChecked == true)
             {
-                Package package = new Package()
+                WCF_Lib.Package package = new WCF_Lib.Package()
                 {
                     NameDest = txtFIO.Text,
                     City = txtCity.Text,
                     Department = depart.Text,
                     Remittance = Convert.ToInt32(nalogka.Text),
                     Payer = 1,
-                    ID_User = 1,
+                    ID_User = ID_Sender,
                     Description = descrip.Text
                 };
                 await proxy.CreatePackageAsync(package);

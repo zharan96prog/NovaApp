@@ -18,6 +18,7 @@ namespace WpfClientNovaPoshta.Model
         public object[] errorCodes { get; set; }
         public object[] warningCodes { get; set; }
         public object[] infoCodes { get; set; }
+        
     }
 
     public class DatumCity
@@ -43,5 +44,6 @@ namespace WpfClientNovaPoshta.Model
         public string RegionTypes { get; set; }
         public string RegionTypesCode { get; set; }
     }
+    
 
 }
