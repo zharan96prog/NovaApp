@@ -5,17 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfClientNovaPoshta"
         mc:Ignorable="d"
-        Title="MainWindow" Height="466" Width="348.114">
+        Title="Розрахувати вартість доставки" Height="550" Width="348.114">
     <Grid>
         <Image Source="/image/4.jpg" HorizontalAlignment="Left" Height="197" VerticalAlignment="Top" Width="340"/>
-        <TextBlock HorizontalAlignment="Left" Margin="-10,193,0,0" TextWrapping="Wrap" Foreground="Red" TextAlignment="Center" FontSize="14" Text="Відправник" VerticalAlignment="Top" Height="33" Width="124"/>
-        <TextBox BorderThickness="1" BorderBrush="Red" HorizontalAlignment="Left" Height="34" Margin="10,216,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="157"/>
-        <TextBox BorderThickness="1" BorderBrush="Red" HorizontalAlignment="Left" Height="34" Margin="173,216,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="157"/>
-        <ComboBox  HorizontalAlignment="Left" Margin="173,281,0,0" VerticalAlignment="Top" Width="157" Height="34"/>
-        <Label Content="Вид послуги" HorizontalAlignment="Left"  Foreground="Red"  FontSize="14" Margin="173,250,0,0" VerticalAlignment="Top" Width="94"/>
-        <Label Content="Грошовий переказ" HorizontalAlignment="Left"  Foreground="Red"  FontSize="14" Margin="10,250,0,0" VerticalAlignment="Top" Width="138" Height="26"/>
-        <TextBox BorderThickness="1" BorderBrush="Red" HorizontalAlignment="Left" Height="34" Margin="10,281,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="157"/>
-        <TextBlock HorizontalAlignment="Left" Margin="148,193,0,0" TextWrapping="Wrap" Foreground="Red" TextAlignment="Center" FontSize="14" Text="Отримувач" VerticalAlignment="Top" Height="33" Width="124"/>
-
+        <TextBlock HorizontalAlignment="Left" Margin="10,193,0,0" TextWrapping="Wrap" Foreground="Red" TextAlignment="Center" FontSize="14" Text="Місто-Відправник" VerticalAlignment="Top" Height="33" Width="124"/>
+        <TextBox Name="citySender" LostFocus="citySender_LostFocus" BorderThickness="1" BorderBrush="Red" HorizontalAlignment="Left" Height="34" Margin="10,216,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="157"/>
+        <TextBox Name="cityReicept" LostFocus="cityReicept_LostFocus" BorderThickness="1" BorderBrush="Red" HorizontalAlignment="Left" Height="34" Margin="173,216,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="157"/>
+        <TextBox x:Name="cost" HorizontalAlignment="Left" Margin="175,317,0,0" VerticalAlignment="Top" Width="157" Height="34" RenderTransformOrigin="0.5,0.5"></TextBox>
+        <Label Content="Оголошена вартість" HorizontalAlignment="Left"  Foreground="Red"  FontSize="14" Margin="175,286,0,0" VerticalAlignment="Top" Width="155"/>
+        <Label Content="Грошовий переказ" HorizontalAlignment="Left"  Foreground="Red"  FontSize="14" Margin="10,286,0,0" VerticalAlignment="Top" Width="138" Height="26"/>
+        <TextBox x:Name="amount" BorderThickness="1" BorderBrush="Red" HorizontalAlignment="Left" Height="34" Margin="10,317,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="157"/>
+        <TextBlock HorizontalAlignment="Left" Margin="178,193,0,0" TextWrapping="Wrap" Foreground="Red" TextAlignment="Center" FontSize="14" Text="Місто-Отримувач" VerticalAlignment="Top" Height="33" Width="124"/>
+        <Label Content="Фактична вага" HorizontalAlignment="Left"  Foreground="Red"  FontSize="10" Margin="9,353,0,0" VerticalAlignment="Top" Width="75" Height="26"/>
+        <TextBox x:Name="weigth" BorderThickness="1" BorderBrush="Red" HorizontalAlignment="Left" Height="35" Margin="8,376,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="76"/>
+        <Label Content="Ширина" HorizontalAlignment="Left"  Foreground="Red"  FontSize="10" Margin="104,354,0,0" VerticalAlignment="Top" Width="47" Height="26"/>
+        <Label Content="Довжина" HorizontalAlignment="Left"  Foreground="Red"  FontSize="10" Margin="161,354,0,0" VerticalAlignment="Top" Width="53" Height="26"/>
+        <TextBox BorderThickness="1" BorderBrush="Red" HorizontalAlignment="Left" Height="35" Margin="104,376,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="47"/>
+        <TextBox BorderThickness="1" BorderBrush="Red" HorizontalAlignment="Left" Height="35" Margin="166,376,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <Label Content="Висота" HorizontalAlignment="Left"  Foreground="Red"  FontSize="10" Margin="219,354,0,0" VerticalAlignment="Top" Width="45" Height="26"/>
+        <TextBox BorderThickness="1" BorderBrush="Red" HorizontalAlignment="Left" Height="35" Margin="218,376,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <Button Content="Розрахувати" Background="White" Foreground="Red" FontWeight="DemiBold" BorderBrush="Red" BorderThickness="1" HorizontalAlignment="Left" Margin="65,428,0,0" VerticalAlignment="Top" Width="220" Height="32" Click="Button_Click"/>
+        <ComboBox x:Name="cmbCitySender" DisplayMemberPath="Present" HorizontalAlignment="Left" Margin="10,255,0,0" VerticalAlignment="Top" Width="157" Height="26"/>
+        <ComboBox x:Name="cmbCityreicept" DisplayMemberPath="Present" HorizontalAlignment="Left" Margin="173,255,0,0" VerticalAlignment="Top" Width="157" Height="26"/>
+        <Label Content="Розрахункова вартість доставки" HorizontalAlignment="Left" Margin="10,476,0,0" VerticalAlignment="Top" Foreground="Red"/>
+        <Label Content="0,00" HorizontalAlignment="Left" Margin="201,476,0,0" VerticalAlignment="Top" Width="48" Foreground="Red"/>
+        <Label x:Name="lblCost" Content="грн" HorizontalAlignment="Left" Margin="256,476,0,0" VerticalAlignment="Top" Foreground="Red"/>
     </Grid>
 </Window>
