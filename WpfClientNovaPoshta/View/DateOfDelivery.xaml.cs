@@ -43,7 +43,7 @@ namespace WpfClientNovaPoshta
                 string api = "fa65506491a98ed202663e43d0144f3b";
                 string citySender = citySenderr[0].Addresses[cmbCitySender.SelectedIndex].Ref;
                 var cityRecipient = cityReiceptt[0].Addresses[cmbCityreicept.SelectedIndex].Ref;
-                string json = "{\"apiKey\":" + $"\" {api}" + "\",\"modelName\": \"InternetDocument\",\"calledMethod\": \"getDocumentDeliveryDate\",\"methodProperties\": {\"DateTime\":" + $"\" {DatePicker1.SelectedDate.Value.Day + "." + DatePicker1.SelectedDate.Value.Month + "." + DatePicker1.SelectedDate.Value.Year}" + "\",\"ServiceType\": \"WarehouseDoors\", \"CitySender\": " + $"\" {citySender}" + "\", \"CityRecipient\":" + $"\" {cityRecipient}" + "\"}}";
+                string json = "{\"apiKey\":" + $"\"{api}" + "\",\"modelName\": \"InternetDocument\",\"calledMethod\": \"getDocumentDeliveryDate\",\"methodProperties\": {\"DateTime\":" + $"\"{DatePicker1.SelectedDate.Value.Day + "." + DatePicker1.SelectedDate.Value.Month + "." + DatePicker1.SelectedDate.Value.Year}" + "\",\"ServiceType\": \"WarehouseDoors\", \"CitySender\": " + $"\"{citySender}" + "\", \"CityRecipient\":" + $"\"{cityRecipient}" + "\"}}";
                 streamOut.Write(json);
                 streamOut.Close();
                 var responce = client.GetResponse();

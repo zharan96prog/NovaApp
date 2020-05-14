@@ -19,9 +19,6 @@ using WpfClientNovaPoshta.ViewModel.Helpers;
 
 namespace WpfClientNovaPoshta
 {
-    /// <summary>
-    /// Interaction logic for CostInfo.xaml
-    /// </summary>
     public partial class CostInfo : Window
     {
         public List<DatumCity> citySenderr = new List<DatumCity>();
@@ -40,8 +37,8 @@ namespace WpfClientNovaPoshta
                 var streamOut = new StreamWriter(client.GetRequestStream());
                 string api = "fa65506491a98ed202663e43d0144f3b";
                 string citySender = citySenderr[0].Addresses[cmbCitySender.SelectedIndex].Ref;
-                var cityRecipient = cityReiceptt[0].Addresses[cmbCityreicept.SelectedIndex].Ref;
-                string json = "{\"modelName\": \"InternetDocumen\", \"calledMethod\": \"getDocumentPrice\", \"methodProperties\": {\"CitySender\": " + $"\" {citySender}" + "\",\"CityRecipient\":  " + $"\" {cityRecipient}" + "\",\"Weight\":  " + $"\" {weigth.Text}" + "\",\"ServiceType\": \"DoorsDoors\",\"Cost\":  " + $"\" {cost.Text}" + "\", \"CargoType\": \"Cargo\",\"SeatsAmount\":\"1\",\"PackCalculate\": {\"PackCount\": \"1\",\"PackRef\": \"1499fa4a-d26e-11e1-95e4-0026b97ed48a\"},\"RedeliveryCalculate\": {\"CargoType\": \"Money\",\"Amount\": " + $"\" {amount.Text}" + "\"} },\"apiKey\": " + $"\" {api}" + "\"}";
+                string cityRecipient = cityReiceptt[0].Addresses[cmbCityreicept.SelectedIndex].Ref;
+                string json = "{\"modelName\": \"InternetDocument\", \"calledMethod\": \"getDocumentPrice\",\"methodProperties\": {\"CitySender\": " + $"\"{citySender}" + "\",\"CityRecipient\":" + $"\"{cityRecipient}" + "\",\"Weight\":  " + $"\"{weigth.Text}" + "\",\"ServiceType\": \"DoorsDoors\",\"Cost\":  " + $"\"{cost.Text}" + "\", \"CargoType\": \"Cargo\",\"SeatsAmount\":\"1\",\"RedeliveryCalculate\": {\"CargoType\": \"Money\",\"Amount\": " + $"\"{amount.Text}" + "\"} },\"apiKey\": " + $"\"{api}" + "\"}";
                 streamOut.Write(json);
                 streamOut.Close();
                 var responce = client.GetResponse();

@@ -28,7 +28,7 @@
         <ComboBox x:Name="cmbCitySender" DisplayMemberPath="Present" HorizontalAlignment="Left" Margin="10,255,0,0" VerticalAlignment="Top" Width="157" Height="26"/>
         <ComboBox x:Name="cmbCityreicept" DisplayMemberPath="Present" HorizontalAlignment="Left" Margin="173,255,0,0" VerticalAlignment="Top" Width="157" Height="26"/>
         <Label Content="Розрахункова вартість доставки" HorizontalAlignment="Left" Margin="10,476,0,0" VerticalAlignment="Top" Foreground="Red"/>
-        <Label Content="0,00" HorizontalAlignment="Left" Margin="201,476,0,0" VerticalAlignment="Top" Width="48" Foreground="Red"/>
-        <Label x:Name="lblCost" Content="грн" HorizontalAlignment="Left" Margin="256,476,0,0" VerticalAlignment="Top" Foreground="Red"/>
+        <Label x:Name="lblCost" Content="0,00" HorizontalAlignment="Left" Margin="201,476,0,0" VerticalAlignment="Top" Width="48" Foreground="Red"/>
+        <Label Content="грн" HorizontalAlignment="Left" Margin="256,476,0,0" VerticalAlignment="Top" Foreground="Red"/>
     </Grid>
 </Window>
