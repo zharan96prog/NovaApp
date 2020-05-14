@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Відслідковування" Height="404.322" Width="271">
     <Grid>
-        <Image Source="D:\NovaPoshta\WpfClientNovaPoshta\image/4.jpg"  HorizontalAlignment="Left" Height="151" VerticalAlignment="Top" Width="263"/>
+        <Image Source="/image/4.jpg"  HorizontalAlignment="Left" Height="151" VerticalAlignment="Top" Width="263"/>
         <TextBlock Background="White"  Foreground="Red" FontSize="15" FontWeight="Bold" HorizontalAlignment="Left" Margin="10,158,0,0" TextAlignment="Center" TextWrapping="Wrap" Text="Введіть номер накладної" VerticalAlignment="Top" Width="243" Height="21"/>
         <TextBox Name="txt1" BorderBrush="Red" BorderThickness="1" HorizontalAlignment="Left" Height="22" Margin="10,188,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="243"/>
         <Button Background="White" BorderBrush="Red" BorderThickness="1" Foreground="Red" FontSize="13" FontWeight="Bold" Content="Відслідкувати" HorizontalAlignment="Left" Margin="76,266,0,0" VerticalAlignment="Top" Width="107" Height="22" Click="Button_Click"/>

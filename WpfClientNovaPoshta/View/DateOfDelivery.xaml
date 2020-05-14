@@ -7,7 +7,7 @@
         mc:Ignorable="d"
        Title="Дата доставки" Height="441.392" Width="302.38">
     <Grid Background="Red">
-        <Image Source="D:\NovaPoshta\WpfClientNovaPoshta\image/2.jpg" HorizontalAlignment="Left" Height="164" VerticalAlignment="Top" Width="295"/>
+        <Image Source="/image/2.jpg" HorizontalAlignment="Left" Height="164" VerticalAlignment="Top" Width="295"/>
         <Label Foreground="White" FontWeight="DemiBold" FontSize="18" Content="Розрахувати дату доставки" HorizontalAlignment="Left" Margin="30,164,0,0" VerticalAlignment="Top" Width="240"/>
         <DatePicker Name="DatePicker1" HorizontalAlignment="Left" Margin="135,198,0,0" VerticalAlignment="Top" Width="149"/>
         <Button Name="btnComplete" Content="Розрахувати" Background="White" HorizontalAlignment="Left" Margin="74,344,0,0" VerticalAlignment="Top" Width="139" Height="26" Click="Button_Click"/>

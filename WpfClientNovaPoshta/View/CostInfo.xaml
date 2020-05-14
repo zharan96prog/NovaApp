@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="466" Width="348.114">
     <Grid>
-        <Image Source="image/4.jpg" HorizontalAlignment="Left" Height="197" VerticalAlignment="Top" Width="340"/>
+        <Image Source="/image/4.jpg" HorizontalAlignment="Left" Height="197" VerticalAlignment="Top" Width="340"/>
         <TextBlock HorizontalAlignment="Left" Margin="-10,193,0,0" TextWrapping="Wrap" Foreground="Red" TextAlignment="Center" FontSize="14" Text="Відправник" VerticalAlignment="Top" Height="33" Width="124"/>
         <TextBox BorderThickness="1" BorderBrush="Red" HorizontalAlignment="Left" Height="34" Margin="10,216,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="157"/>
         <TextBox BorderThickness="1" BorderBrush="Red" HorizontalAlignment="Left" Height="34" Margin="173,216,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="157"/>

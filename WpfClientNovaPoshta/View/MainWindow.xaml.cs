@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -44,6 +45,12 @@ namespace WpfClientNovaPoshta
         {
             CostInfo cost = new CostInfo();
             cost.Show();
+        }
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            Process process = new Process();
+            process.StartInfo = new ProcessStartInfo("https://novaposhta.ua/news/rubric/2");
+            process.Start();
         }
     }
 }

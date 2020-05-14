@@ -21,7 +21,7 @@
         <Label BorderBrush="Red" BorderThickness="1" Background="White" Content="Оплачує: " HorizontalAlignment="Left" Margin="10,254,0,0" VerticalAlignment="Top" Height="28" Width="123"/>
         <RadioButton Name="rb1" Content="Отримувач" HorizontalAlignment="Left" Margin="283,258,0,0" VerticalAlignment="Top"/>
         <RadioButton  Name="rb2" Content="Відправник" HorizontalAlignment="Left" Margin="159,258,0,0" VerticalAlignment="Top" Height="21" Width="98"/>
-        <Image Source="image/3.jpg" HorizontalAlignment="Left" Height="43" Margin="43,5,0,0" VerticalAlignment="Top" Width="310"/>
+        <Image Source="/image/3.jpg" HorizontalAlignment="Left" Height="43" Margin="43,5,0,0" VerticalAlignment="Top" Width="310"/>
         <Label BorderBrush="Red" BorderThickness="1" Background="White" Content="Номер відправника: " HorizontalAlignment="Left" Margin="10,218,0,0" VerticalAlignment="Top" Height="28" Width="123"/>
         <TextBox x:Name="phone_sender" BorderBrush="Red" BorderThickness="1" HorizontalAlignment="Left" Height="28" Margin="138,218,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="244"/>
     </Grid>

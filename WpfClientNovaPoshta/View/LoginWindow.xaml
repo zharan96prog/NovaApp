@@ -15,7 +15,7 @@
         </Style>
     </Window.Resources>
     <Grid Background="Tomato">
-        <Image Source="D:\NovaPoshta\WpfClientNovaPoshta\image/3.jpg" HorizontalAlignment="Left" Height="48" VerticalAlignment="Top" Width="396" Margin="25,382,0,0"/>
+        <Image Source="/image/3.jpg" HorizontalAlignment="Left" Height="48" VerticalAlignment="Top" Width="396" Margin="25,382,0,0"/>
         <StackPanel>
             <ToggleButton x:Name="signIn" >
                 <ToggleButton.Content>
